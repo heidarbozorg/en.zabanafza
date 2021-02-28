@@ -384,10 +384,12 @@
                                     <div class="col-md-8 col-sm-12 col-lg-8">
                                         <form class="cnt-frm text-center">
                                             <div class="row mrg10">
-                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="text" Placeholder="Complete Name *" /></div>
-                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="email" Placeholder="Email Address *" /></div>
-                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="text" Placeholder="Subject *" /></div>
-                                                <div class="col-md-12 col-sm-12 col-lg-12"><textarea class="brd-rd30" Placeholder="Your Message *"></textarea> <button class="brd-rd30" type="submit">SEND MESSAGE</button></div>
+                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="text" Placeholder="Complete Name *" required /></div>
+                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="email" Placeholder="Email Address *" required /></div>
+                                                <div class="col-md-4 col-sm-4 col-lg-4"><input class="brd-rd30" type="text" Placeholder="Subject *" required /></div>
+                               
+                                                <div class="col-md-12 col-sm-12 col-lg-12"><textarea class="brd-rd30" Placeholder="Your Message *" required></textarea> <button class="brd-rd30" type="submit">SEND MESSAGE</button></div>
+                                                <div class="g-recaptcha" id="captchaId"></div>
                                             </div>
                                         </form>
                                     </div>
@@ -433,5 +435,8 @@
     <script src="js/jquery.poptrox.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4XGd9qpQIEkbfL6QpR6qk2jQ9S9_5Uww"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
 </body>
 </html>

@@ -161,3 +161,17 @@ if ($('#gmp').length) {
 }
 
 });
+
+var verifyCallback = function(response) {
+console.log('captcha',response);
+};
+// var imNotARobot = function () {
+//   $("#captcha").val(grecaptcha.getResponse());
+// };
+var onloadCallback = function() {
+  grecaptcha.render('captchaId', {
+    'sitekey' : '6Ld-JGsaAAAAAKS2gZ_TmrXnkaVQUpVBKVX9gS-f',
+    'callback' : verifyCallback,
+    'theme' : 'light'
+  });
+};
