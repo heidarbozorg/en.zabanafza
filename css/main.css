@@ -1638,13 +1638,13 @@ footer {
   margin-top: 20px;
 }
 .scl-btn {
-  float: left;
-  margin: 0 5px;
-  line-height: 36px;
-  font-size: 9.5px;
-  width: 40px;
-  color: #ffffff;
-  border: 2px solid;
+float: left;
+    margin: 2px 5px;
+    line-height: 36px;
+    font-size: 25.5px;
+    width: 43px;
+    color: #ffffff;
+    border: 2px solid;
 }
 .scl-btn:hover {background-color: transparent;}
 .poptrox-popup {padding: 10px !important;}
